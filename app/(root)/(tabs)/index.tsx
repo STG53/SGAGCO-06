@@ -1,11 +1,14 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import { Link } from "expo-router";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open SGAGCO-06</Text>
-      <StatusBar style="auto" />
+      <Text>SGAGCO-06</Text>
+      <Link href="/sign-in">Sign-In</Link>
+      <Link href="/explore">Explore</Link>
+      <Link href="/profile">Profile</Link>
+      <Link href="/properties/1">Property</Link>
     </View>
   );
 }
